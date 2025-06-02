@@ -6,9 +6,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md fixed w-full z-20 top-0 left-0">
-      <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
         <Link to="/" className="text-2xl font-bold text-gray-800">LOGO</Link>
-        
+
         {/* Hamburger Toggle Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -31,6 +31,8 @@ const Navbar = () => {
             <li><Link to="/about" className="block py-2 px-4 text-gray-700 hover:text-blue-600">About Us</Link></li>
             <li><Link to="/services" className="block py-2 px-4 text-gray-700 hover:text-blue-600">Our Services</Link></li>
             <li><Link to="/pricing" className="block py-2 px-4 text-gray-700 hover:text-blue-600">Pricing</Link></li>
+            <li><Link to="/resources" className="block py-2 px-4 text-gray-700 hover:text-blue-600">Resources</Link></li>
+            <li><Link to="/contact" className="block py-2 px-4 text-gray-700 hover:text-blue-600">Contact Us</Link></li>
           </ul>
         </div>
       </div>
